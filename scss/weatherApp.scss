@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Montserrat", "Roboto", "Nunito", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  color: white;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
+
+.location,
+.temperature {
+  min-height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  flex-direction: column;
+
+  &-description {
+    letter-spacing: 1px;
+    font-variant: small-caps;
+  }
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  span {
+    margin: 10px;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
